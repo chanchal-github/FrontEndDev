@@ -1,0 +1,24 @@
+
+
+git init
+
+git remote add origin 'https://github.com/chanchal-github/FrontEndDev.git'
+
+git branch -m master main  ===> This local has name as Master. The Remote has Main. Therefore rename local to Main to keep in sync with Remote repository.
+
+
+git pull origin main 
+<if above command fails, then use> git pull origin main --allow-unrelated-histories
+
+
+git add 'GitHub Commands.txt'  ==> To add file in index
+
+git commit -a -m "first time commit to main"
+
+
+
+
+
+
+
+
