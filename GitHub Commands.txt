@@ -1,24 +1,33 @@
+Working with Git/GitHub
+=======================
 
+Step#1: Create a remote repository in GitHub.
 
+Step#2: Create a local repository in local machine (e.g. Project Folder.)
+
+Step#3: Initialize the local repository.
 git init
 
-git remote add origin 'https://github.com/chanchal-github/FrontEndDev.git'
+Step#4: Connect local repository to GitHub remote repository.
+git remote add origin 'https://github.com/chanchal-github/FrontEndDev.git' 
 
-git branch -m master main  ===> This local has name as Master. The Remote has Main. Therefore rename local to Main to keep in sync with Remote repository.
+Step#5: This local repository has branch name as Master, but the remote name is Main. Therefore rename local to Main to keep in sync with Remote repository. Otherwise Push / Pull will fail.
+git branch -m master main
 
-
+Step#6: Pull the project folder/main repository from GitHub to Local repository before starting the project work.
 git pull origin main 
-<if above command fails, then use> git pull origin main --allow-unrelated-histories
+git pull origin main --allow-unrelated-histories  [if above command fails, then use this one]
 
+Step#7: Work on local repository. Amend / Add / Delete Files.
 
-git add 'GitHub Commands.txt'  ==> To add file in index
+Step#8: Check status of local reposity, untracked files, if any.
+git status
 
+Step#9: Add files to index. Otherwise Commit will not work.
+git add 'GitHub Commands.txt'
+
+Step#10: Commit the changes in local repository.
 git commit -a -m "first time commit to main"
 
-
-
-
-
-
-
-
+Step#11: Push the files to "main" branch of remote repository.
+git push origin main
